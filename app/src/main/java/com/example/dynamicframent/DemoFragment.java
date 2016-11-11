@@ -12,6 +12,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.dynamicframent.dummy.ResponseData;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,7 +23,7 @@ import java.util.List;
 
 public class DemoFragment extends Fragment {
 
-    List<DemoModal> list = new ArrayList<>();
+    List<ResponseData.Response.AllApp> list = new ArrayList<>();
 
 
     public static DemoFragment getInstance() {
@@ -99,7 +101,7 @@ public class DemoFragment extends Fragment {
 
                 final ViewHolder user = ((ViewHolder) holder);
 
-                user.mTextView.setText(list.get(position).getFirstName());
+                user.mTextView.setText(list.get(position).getAppName());
 
                 user.mTextView.setOnClickListener(new View.OnClickListener() {
                     @Override
