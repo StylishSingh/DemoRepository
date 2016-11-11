@@ -12,7 +12,7 @@ import java.util.List;
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
     List<Fragment> fragment;
     String[] title = new String[]{"fragment1,fragment2", "fragment3", "fragment4", "fragment5", "fragment6",
-            "fragment7", "fragment8", "fragment9", "fragment11"};
+            "fragment7", "fragment8", "fragment9", "fragment10"};
 
     public ViewPagerAdapter(FragmentManager fm, List<Fragment> fragment) {
         super(fm);
