@@ -1,5 +1,8 @@
 package com.example.dynamicframent.dummy;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -87,7 +90,7 @@ public class ResponseData {
         }
 
         @Generated("org.jsonschema2pojo")
-        public class AllApp {
+        public class AllApp implements Parcelable {
 
             @SerializedName("id")
             @Expose
@@ -279,6 +282,15 @@ public class ResponseData {
                 this.appLink = appLink;
             }
 
+            @Override
+            public int describeContents() {
+                return 0;
+            }
+
+            @Override
+            public void writeToParcel(Parcel parcel, int i) {
+
+            }
         }
 
         @Generated("org.jsonschema2pojo")

@@ -37,7 +37,7 @@ public class HomeActivity extends AppCompatActivity {
                         Log.e("hello", "hhhhhhhhhh");
                         ResponseData mResponseBody = response.body();
 
-                        System.out.println("mResponseBody = " + mResponseBody.getResponse().get(0).getStatus());
+                        System.out.println("mResponseBody = " + mResponseBody.getResponse().get(0).getData().get(0).getDeviceApp().size());
 
                     } else {
                         System.out.println("response error = " + response.errorBody());
